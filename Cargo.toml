@@ -1,0 +1,15 @@
+[package]
+name = "hal"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cfg-if = "1.0.0"
+lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
+logist = { path = "../logist", default-features = false }
+arch = { path = "../arch" }
+
+[build-dependencies]
+cfg_aliases = "0.1"
